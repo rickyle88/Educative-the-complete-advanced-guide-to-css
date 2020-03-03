@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before After</title>
+    <style>
+        /* Add text before "I love you" */
+        .article::before{
+            content: "Yes, I do";
+
+        }
+
+        .article::after{
+            content: "No, I don't";
+        }
+
+        /* A few things to note are:
+	1. 
+Content added using pseudo-elements is only visually displayed. It is not inserted into the DOM.
+	2. 
+Don’t rely on :before and :after to insert content that is relevant to the meaning and completeness of the content on the page.
+
+ */
+    </style>
+</head>
+<body>
+    <div class="article">
+        <p>I love CSS. Do you?</p>
+        <p>Monday</p>
+    </div>
+</body>
+</html>

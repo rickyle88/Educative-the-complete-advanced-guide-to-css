@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Using :first-child, give the first paragaph a color of red and a font-size of 10px */
+        p:first-child {
+            color: red;
+            font-size: 10px;
+        }
+
+        /* Using :last-child, give the last paragaph a background-color of red and a color of white
+
+ */
+        p:last-child {
+            background-color: red;
+            color: white;
+        }
+
+        /* Using :only-child, give the ‘lone poor’ paragaph a background-color of blue and a color of white */
+        p:only-child {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>I am the first paragraph here</p>
+        <p>I am the second paragraph here</p>
+        <p>I am the third paragraph here</p>
+        <p>I am the last paragraph here</p>
+    </div>
+    <div>
+        <p>Lone poor paragraph</p>
+    </div>
+</body>
+
+</html>
