@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .entire {
+            /*DO NOT USE PERCENTAGES*/
+            background-color: red;
+            width: 100%;
+            height: 100%;
+            /* width: 100vw; */
+            /* height: 100vh; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        This container is 50% wide and 100vh.<br>
+        Because the parent container is by default the viewport, 100% would be the same as 100vw. in this case, 50% is
+        the same as 50vw.<br>&nbsp;<br>
+        All of the divs below are nested inside this one, but look how vw ignores its width.
+        <div class="viewport pad">
+            This div is 100vw and will overflow the yellow container.
+        </div>
+        <div class="vw80 pad">
+            This div is 80Vw and will overflow the container.
+        </div>
+        <div class="percent pad">
+            This div is 100% of the yellow container. It will scale inside the container.
+        </div>
+        <div class="percent50 pad">
+            This div is 50% of the yellow container. It will scale inside the container.
+        </div>
+        <div class="vw50 pad">
+            This div is 50Vw, the same as 100% because the container is 50%.<br>
+            It scales with the viewport not the container.
+        </div>
+        Scale the viewport/browser width to see how they scale. The rate of change is the same because this container
+        will always be 50% of the viewport.
+    </div>
+</body>
+
+</html>
